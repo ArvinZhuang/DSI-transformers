@@ -114,8 +114,8 @@ def main():
         learning_rate=0.0005,
         warmup_steps=10000,
         # weight_decay=0.01,
-        per_device_train_batch_size=64,
-        per_device_eval_batch_size=64,
+        per_device_train_batch_size=128,
+        per_device_eval_batch_size=128,
         evaluation_strategy='steps',
         eval_steps=1000,
         max_steps=1000000,
@@ -125,7 +125,7 @@ def main():
         save_strategy='no',
         # fp16=True,  # gives 0/nan loss at some point during training, seems this is a transformers bug.
         dataloader_num_workers=10,
-        gradient_accumulation_steps=2
+        # gradient_accumulation_steps=2
     )
 
     trainer = IndexingTrainer(
