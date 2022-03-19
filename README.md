@@ -1,8 +1,8 @@
 # DSI-transformers
 A huggingface transformers implementation of [Transformer Memory as a Differentiable Search Index](https://arxiv.org/abs/2202.06991), Yi Tay, Vinh Q. Tran, Mostafa Dehghani, Jianmo Ni, Dara Bahri, Harsh Mehta, Zhen Qin, Kai Hui, Zhe Zhao, Jai Gupta, Tal Schuster, William W. Cohen, Donald Metzler
 
-Requirements: `python=3.8``transformers=4.17.0``datasets=1.18.3``wandb`
-> Note: This is not the official implementation.
+Requirements: `python=3.8` `transformers=4.17.0` `datasets=1.18.3` `wandb`
+> Note: This is not the official repository.
 
 ## Goal of this repository
 Reproduce the results of DSI Large, Naive String Docid, NQ10K. According to Table 3 in the original paper, we should have `Hits@1=0.347`,`Hits@10=0.605`
