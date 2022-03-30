@@ -81,11 +81,14 @@ def main():
                                          max_length=L,
                                          cache_dir='cache',
                                          tokenizer=tokenizer)
+    
+    # This eval set is really not the 'eval' set but used to report if the model can memorise (index) all training data points.
     eval_dataset = IndexingTrainDataset(path_to_data='data/NQ/NQ_10k_multi_task_train.json',
                                         max_length=L,
                                         cache_dir='cache',
                                         tokenizer=tokenizer)
-
+    
+    # This is the actual eval set.
     test_dataset = IndexingTrainDataset(path_to_data='data/NQ/NQ_10k_valid.json',
                                         max_length=L,
                                         cache_dir='cache',
