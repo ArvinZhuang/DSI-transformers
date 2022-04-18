@@ -20,7 +20,7 @@ cd back to the root directory and run:
 ```
 python3 train.py
 ```
-we use [wandb](https://wandb.ai/site) to log the Hits scores during training:
+The training can be run with a single Tesla-v100 32G GPU. We use [wandb](https://wandb.ai/site) to log the Hits scores during training:
 
 ![.im](hits_plots.png)
 
