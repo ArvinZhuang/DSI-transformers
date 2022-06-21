@@ -4,6 +4,9 @@ A huggingface transformers implementation of [Transformer Memory as a Differenti
 Requirements: `python=3.8` `transformers=4.17.0` `datasets=1.18.3` `wandb`
 > Note: This is not the official repository.
 
+## Updates
+- Check out our new repository for DSI training: https://github.com/ArvinZhuang/DSI-QG
+
 ## Goal of this repository
 Reproduce the results of DSI Large, Naive String Docid, NQ10K. According to Table 3 in the original paper, we should have `Hits@1=0.347`,`Hits@10=0.605`
 
